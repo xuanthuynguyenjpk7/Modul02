@@ -1,0 +1,7 @@
+CREATE TABLE  users (
+user_id  INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+login_name VARCHAR(50) NOT NULL UNIQUE,
+user_password VARCHAR(80) NOT NULL,
+login_status VARCHAR(10) DEFAULT 'ACTIVE',
+CHECK (login_status IN ('ACTIVE', 'INACTIVE'))
+);
