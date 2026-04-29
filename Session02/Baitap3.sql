@@ -1,0 +1,8 @@
+CREATE TABLE  students_constraint (
+Student_ID  INT PRIMARY KEY NOT NULL,
+Fullname VARCHAR(50) NOT NULL,
+Email VARCHAR(80) UNIQUE,
+Age INT NOT NULL CHECK(Age >= 18),
+City VARCHAR(70) DEFAULT 'HO CHI MINH'
+);
+
